@@ -1,0 +1,37 @@
+$bgcolor: #111;
+$link-color: #999;
+
+html {
+}
+
+body {
+  position: relative;
+  font-family: arial;
+  background: $bgcolor;
+  text-align: center;
+  a {
+    color: $link-color;
+    text-decoration: none;
+    transition: all .5s ease;
+    &:hover {
+      color: white;
+    }
+  }
+  .main {
+    position: fixed;
+    width: 100%;
+    bottom: 18%;
+    text-align: center;
+    .heading {
+      font-size: 18px;
+      color: #ccc;
+    }
+    .gh_link {
+      margin: 40px 0 20px;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
