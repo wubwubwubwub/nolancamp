@@ -1,1 +1,1 @@
-web: ruby nolancamp.rb -s puma -p $PORT
+/ web: ruby nolancamp.rb -s puma -p $PORT
