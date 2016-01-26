@@ -1,15 +1,8 @@
-require 'rubygems'
 require 'sinatra'
-require 'slim'
 
-configure do
-  # set :name, "DAZ"
-  # set(:digit){ rand(10) }
+get '/main.css' do 
+  scss :styles
 end
-
-# ----------------------------------------------- 
-
-get('/main.css'){ scss :styles }
 
 get '/' do
   @title = "nolan | camp"
@@ -25,4 +18,3 @@ end
 #   haml :error # if error template
 # end
 
-__END__
