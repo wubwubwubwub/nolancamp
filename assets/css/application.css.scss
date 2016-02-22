@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300italic,300");
+
+$bgcolor: rgba(17, 17, 17, 1);
+$text-color: #bfbfbf;
+
+html {
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+section {
+  background: url(image-path('ply.jpg'));
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  .overlay {
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+body {
+  font-size: 62.5%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+    transition: all .5s ease;
+    color: $text-color;
+    &:hover {
+      color: white;
+    }
+  }
+}
+.main {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 600px;
+  color: $text-color;
+  .heading {
+    font-size: 2.6em;
+  }
+  .gh_link {
+    margin: 40px 0 0;
+    height: 4.4em;
+    text-align: center;
+    .gh_icon {
+      display: inline;
+      transition: all .5s ease-out;
+      border-radius: 50%;
+      &:hover {
+        box-shadow: 0 0 32px 3px white;
+      }
+    }
+    img {
+      height: 34px;
+      width: 34px;
+    }
+  }
+  p {
+    font-size: 1.9em;
+  }
+}
+.arrow {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 100px;
+  img {
+    display: inline-block;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;    
+  }
+}

@@ -1,5 +1,2 @@
-require 'bundler'
-Bundler.require
-
-require './nolancamp'
-run Sinatra::Application
+require_relative 'nolancamp'
+run Application
