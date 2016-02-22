@@ -1,2 +1,2 @@
-require_relative 'nolancamp'
+require_relative 'application'
 run Application
