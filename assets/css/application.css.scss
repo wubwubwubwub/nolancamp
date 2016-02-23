@@ -29,7 +29,7 @@ section {
 }
 
 body {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1em = 10px
   position: relative;
   text-align: center;
   margin: 0 auto;
@@ -77,11 +77,42 @@ body {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 100px;
   img {
     display: inline-block;
     margin: 0 auto;
     height: 50px;
     width: 50px;    
   }
+}
+
+.down_arrow {
+  transition: all .2s ease;
+  &:hover {
+    margin-top: 10px;
+  }
+}
+
+.site-div {
+  display: block;
+  height: 200px;
+  background: rgba(0, 0, 0, .7);
+  color: $text-color;
+  border-top: 1px solid $text-color;
+  transition: all .3s ease-in;
+  &:hover {
+    background: rgba(35, 4, 6, .8)
+  }
+}
+
+.site-title {
+  margin: 45px 0 26px;
+  font-size: 1.9em;
+}
+
+.site-description {
+  font-size: 1.5em;
+}
+
+.site-link {
+  font-size: 1.5em;
 }

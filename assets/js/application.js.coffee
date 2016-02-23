@@ -4,5 +4,10 @@ $(document).on 'ready', ->
   winHeight = $(window).height()
   mainPadding = (winHeight / 2)
   $('.main').css('height', winHeight).css('padding-top', mainPadding)
-  $('.arrow').css('top', winHeight - 100)
+  arrowHeight = $('.main').outerHeight()
+  $('.arrow').css('top', arrowHeight - 100)
 
+  $('.arrow').find('a').click (e) ->
+    e.preventDefault()
+    
+    
