@@ -9,5 +9,7 @@ $(document).on 'ready', ->
 
   $('.arrow').find('a').click (e) ->
     e.preventDefault()
+    $('html, body').animate { scrollTop: $('#film-fatales').offset().top }, 1000
+    return
     
     
