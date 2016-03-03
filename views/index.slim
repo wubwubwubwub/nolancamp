@@ -12,33 +12,43 @@
 
 .site-div.closed#film-fatales
   p.site-title Film Fatales
-  p.site-description Film Fatales is an international group of women filmmakers
+  p.site-description Film Fatales is a global network of women filmmakers
   a.site-link href="//filmfatales.org" target="_blank" www.filmfatales.org
   .centering
     a href="//filmfatales.org" target="_blank"
       img.ss.hidden src=image_path("ff.png")
-  .site-blurb
-    p
+  .site-blurb.hidden
+    p The Film Fatales website is built with Ruby on Rails and hosted on Heroku with a postgres database. Film fatales uses an Active Admin CMS interface with bootstrap, sass, javascript, and jquery for the frontend and also utilizes Amazon AWS S3 and Cloudfront services via the Fog gem. Film fatales is monitored via New Relic monitoring services.
 
 .site-div.closed#thump-recording
   p.site-title Thump Recording
-  p.site-description Thump Studios is a recording facility located in the Greenpoint neigborhood of Brooklyn, NY
+  p.site-description Thump Studios is a recording facility located in Brooklyn, NY
   a.site-link href="//thumprecording.com" target="_blank" www.thumprecording.com
   .centering
     a href="//thumprecording.com" target="_blank"
       img.ss.hidden src=image_path("thump.png")
-  .site-blurb
-    p
+  .site-blurb.hidden
+    p Thump Recording's website is built with Ruby on Rails and hosted on Heroku with a postgres database. Thump's website uses the featherlight library, javascript, jquery and sass. Thump also uses the Soundcloud API to fetch traks, Amazon AWS S3 for asset management and Cloudfront for CDN services.
+
+.site-div.closed#clarinet-milk-tv
+  p.site-title Clarinet Milk TV
+  p.site-description Internet Television
+  a.site-link href="//clarinet-milk-tv.herokuapp.com" target="_blank" www.clarinetmilk.tv
+  .centering
+    a href="//clarinet-milk-tv.herokuapp.com" target="_blank"
+      img.ss.hidden src=image_path("cmtv.png")
+  .site-blurb.hidden
+    p Clarinet Milk TV uses the YouTube API and a timestamp sent from your browser that fetches a video from a curated playlist so that every client who is watching at the same time will be seeing the same thing, just like watching real TV. There are no controls, you just watch. Clarinet Milk was developed in collaboration with <a href="//waymondo.com">Justin Talbott of Waymondo</a>.
 
 .site-div.closed#ohmyrockness
   p.site-title Oh My Rockness
-  p.site-description Oh My Rockness - Your Indie Concert Calendar
+  p.site-description Your Indie Concert Calendar
   a.site-link href="//ohmyrockness.com" target="_blank" www.ohmyrockness.com
   .centering
     a href="//ohmyrockness.com" target="_blank"
       img.ss.hidden src=image_path("omr.png")
-  .site-blurb
-    p
+  .site-blurb.hidden
+    p Oh My Rockness is a Ruby on Rails application that was built from the ground up by <a href="//waymondo.com">Justin Talbott of Waymondo</a>. Over the past two years I've worked with Justin to implement new features, refactor old code, and optimize performance for its rapidly expanding userbase.
 
 a.up_arrow href="#"
   img.rotated_arrow.hidden src=image_path('arrow.png')
