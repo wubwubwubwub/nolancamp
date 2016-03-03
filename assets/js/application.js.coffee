@@ -14,6 +14,8 @@ $(document).on 'ready', ->
   # set open div height to window height unless smaller than 800px
   if winHeight < 800
     divHeight = 800
+  else if winHeight > 1500
+    divHeight = 1500
   else
     divHeight = winHeight
   $('.ss').css('height', divHeight / 2).css('margin-top', divHeight * .05)
