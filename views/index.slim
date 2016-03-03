@@ -1,18 +1,44 @@
 .main
   p.heading nolan | camp
-  .gh_link: a href='https://github.com/wubwubwubwub' target='_blank'
-     img.gh_icon src=image_path('/github.png')
-
   p freelance ruby on rails & web developer
-  p: a href="mailto:nolan@nolancamp.com" email me
-  .arrow
-    a href="#"
-      img.down_arrow src=image_path('arrow-bfbfbf.png')
-.site-div#film-fatales
+  a.social_link href='https://github.com/wubwubwubwub' target='_blank'
+    img.social_icon.gh src=image_path('/github.png')
+  a.social_link href='https://linkedin.com/in/nolancamp' target='_blank'
+    img.social_icon.in src=image_path('in.png')
+  a.social_link href="mailto:nolan@nolancamp.com"
+    img.social_icon.email src=image_path('email.png')
+  a.arrow href="#"
+    img.down_arrow src=image_path('arrow.png')
+
+.site-div.closed#film-fatales
   p.site-title Film Fatales
   p.site-description Film Fatales is an international group of women filmmakers
   a.site-link href="//filmfatales.org" target="_blank" www.filmfatales.org
-.site-div#thump-recording
+  .centering
+    a href="//filmfatales.org" target="_blank"
+      img.ss.hidden src=image_path("ff.png")
+  .site-blurb
+    p
+
+.site-div.closed#thump-recording
   p.site-title Thump Recording
   p.site-description Thump Studios is a recording facility located in the Greenpoint neigborhood of Brooklyn, NY
   a.site-link href="//thumprecording.com" target="_blank" www.thumprecording.com
+  .centering
+    a href="//thumprecording.com" target="_blank"
+      img.ss.hidden src=image_path("thump.png")
+  .site-blurb
+    p
+
+.site-div.closed#ohmyrockness
+  p.site-title Oh My Rockness
+  p.site-description Oh My Rockness - Your Indie Concert Calendar
+  a.site-link href="//ohmyrockness.com" target="_blank" www.ohmyrockness.com
+  .centering
+    a href="//ohmyrockness.com" target="_blank"
+      img.ss.hidden src=image_path("omr.png")
+  .site-blurb
+    p
+
+a.up_arrow href="#"
+  img.rotated_arrow.hidden src=image_path('arrow.png')
