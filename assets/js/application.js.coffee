@@ -34,12 +34,12 @@ $(document).on 'ready', ->
       $(this).find('.ss').fadeIn(1000)
       $(this).find('.site-blurb').fadeIn(1000)
       upArrow.fadeIn(1800).removeClass('hidden')
-      $(this).removeClass('closed').addClass('opened').css('height', divHeight)
+      $(this).removeClass('closed').addClass('opened').height(divHeight)
       counterVar++
     else
       $(this).find('.ss').fadeOut(400)
       $(this).find('.site-blurb').fadeOut(400)
-      $(this).removeClass('opened').addClass('closed').css('height', 200)
+      $(this).removeClass('opened').addClass('closed').height(200)
       counterVar--
       if counterVar == 0
         upArrow.fadeOut(400).addClass('hidden')
@@ -50,7 +50,7 @@ $(document).on 'ready', ->
       if $(this).hasClass('opened')
         $(this).find('.ss').fadeOut(400)
         $(this).find('.site-blurb').fadeOut(400)
-        $(this).removeClass('opened').addClass('closed').css('height', 200)
+        $(this).removeClass('opened').addClass('closed').height(200)
     $('html, body').animate { scrollTop: $('body').offset().top }, 1000
     $(this).fadeOut(800).removeClass('visible').addClass('hidden')
     counterVar = 0
